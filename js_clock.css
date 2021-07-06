@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    text-align: center;
+    justify-content: center;
+    background-color: #0e1538;
+    padding: 10px;
+    height: 97.5vh;
+}
+
+.heading{
+    font-size: 50px;
+    color: #fff;
+    padding-bottom:85px;
+}
+
+#hour,#min,#sec{
+    color:rgb(255, 255, 255);
+    font-size: 120px;
+    font-weight: bold;
+    padding-top: 0px;
+    display: inline-block;
+    background-color:#0e1538;
+    width: 245px;
+    height: 245px;
+    transition: all 0.4 ease;
+    position: relative;
+    z-index: 1;
+}
+
+.time{
+    display:flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.box1{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: white;
+    margin: 20px;
+}
+
+.box1::before{
+    content: '';
+    position: absolute;
+    top:-4px;
+    left: -4px;
+    bottom: -4px;
+    right: -4px;
+    transform: skewX(3deg) skewY(3deg);
+    background: linear-gradient(315deg,#00ccff, #0e1538,#d400d4);
+}
+.box1::after{
+    content: '';
+    position: absolute;
+    top:-4px;
+    left: -4px;
+    bottom: -4px;
+    right: -4px;
+    background: linear-gradient(315deg,#00ccff, #0e1538,#d400d4);
+}
+h3{
+    color:rgb(255, 255, 255);
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    margin-top: -80px;
+}
+#ampm{
+    font-size: 30px;
+    font-weight: bold;
+}
+@media (max-width: 864px) {
+    .heading{
+        font-size: 40px;
+        color: #fff;
+        padding-bottom:45px;
+    }
+    .time{
+        display:block;
+        justify-content: center;
+        margin-top: 0px;
+    }
+    #hour,#min,#sec{
+        color:rgb(255, 255, 255);
+        font-size: 50px;
+        font-weight: bold;
+        padding-top: 0px;
+        display: inline-block;
+        background-color:#0e1538;
+        width: 140px;
+        height: 140px;
+        transition: all 0.4 ease;
+        position: relative;
+        z-index: 1;
+    }
+    .box1{
+        position: relative;
+        width: 150px;
+        height: 150px;
+        background: white;
+        margin: 20px;
+        margin-left: 30vw;
+    }
+    
+    .box1::before{
+        content: '';
+        position: absolute;
+        top:-4px;
+        left: -4px;
+        bottom: -4px;
+        right: -4px;
+        transform: skewX(2deg) skewY(2deg);
+        background: linear-gradient(315deg,#00ccff, #0e1538,#d400d4);
+    }
+    .box1::after{
+        content: '';
+        position: absolute;
+        top:-4px;
+        left: -4px;
+        bottom: -4px;
+        right: -4px;
+        background: linear-gradient(315deg,#00ccff, #0e1538,#d400d4);
+    }
+    h3{
+        color:rgb(255, 255, 255);
+        font-size: 20px;
+        font-weight: bold;
+        position: relative;
+        z-index: 1;
+        margin-top: -80px;
+    }
+}
